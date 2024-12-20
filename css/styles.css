@@ -1,0 +1,312 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height : 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Entête (header) */
+#header {
+    background-color: #fff;
+    color: rgb(255, 253, 253);
+    padding: 10px 0;
+}
+
+#main-nav {
+    padding: 0;
+}
+
+#main-nav .navbar-nav li a {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+}
+
+#main-nav .navbar-nav li a:hover {
+    background-color: #1c5ca0;
+    color: #fff !important;
+}
+
+#main-nav .active a {
+    background-color: #0d4684;
+    color: #fff !important;
+}
+
+#main-nav .navbar-toggle {
+    border: none;
+}
+
+#hero-banner {
+    height : 100vh;
+    background-color: #fff;
+    color: rgb(35, 11, 100);
+    display: flex;
+    justify-content: center;   /* Centrer horizontalement */
+    align-items: center;       /* Centrer verticalement */
+    text-align: center;        /* Centrer le texte à l'intérieur de l'élément */
+    padding: 0;                /* Annuler les padding pour le centre */
+}
+
+#hero-banner .banner-inner {
+    width: 100%;                /* Occuper toute la largeur de l'écran */
+    max-width: 1200px;          /* Limiter la largeur maximale pour un meilleur rendu */
+    padding: 20px;              /* Ajouter un peu de padding autour du contenu */
+}
+.globe-container {
+    margin: 20px auto; /* Ajout d'espacement autour de l'animation */
+    margin-left: 100px;
+}
+
+#hero-banner h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 100;
+}
+
+#hero-banner p {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* Section "Introduction" */
+#Introduction {
+    padding: 60px 0;
+    height : 100vh;
+    background-color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Centrer le texte dans la section */
+#Introduction .wow {
+    text-align: center;
+}
+
+#Introduction .wow h3 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+#Introduction .wow p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Section "Research Question : " */
+#RQ {
+    height : auto;
+    padding: 60px 0;
+    background-color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 20px;
+    color: #555;
+}
+
+.research-questions ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.research-questions li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.research-questions strong {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrapper {
+  width:100%;
+  margin:0 auto;
+}
+
+
+
+/* Section "Data Story : " */
+#data-story {
+    height : auto;
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 20px;
+    color: #555;
+}
+
+.row {
+    height : auto;
+    margin-bottom: 30px; /* Espacement entre les lignes */
+}
+
+.subsection-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Animation de chaque sous-section */
+.subsection.wow {
+    visibility: hidden;
+}
+
+.subsection.wow.fadeInLeft, .subsection.wow.fadeInUp, .subsection.wow.fadeInRight {
+    animation-name: fadeInAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+
+/* Animations */
+.wow {
+    visibility: hidden;
+}
+
+.wow.fadeInDown {
+    animation: fadeInDown 1s forwards;
+}
+
+.wow.fadeInRight {
+    animation: fadeInRight 1s forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Section "Team" */
+#team {
+    padding: 60px 0;
+    height : auto;
+    background-color: #fff;
+    clear: both;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 20px;
+    color: #555;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero-banner h2 {
+        font-size: 36px;
+    }
+
+    #hero-banner p {
+        font-size: 20px;
+    }
+
+    .section-header .section-title {
+        font-size: 28px;
+    }
+
+    .section-header p {
+        font-size: 16px;
+    }
+
+    #team .team-member {
+        margin-bottom: 20px;
+    }
+}
