@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title> Adaventure project</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+</head>
+
+<body id="home">
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home</a></li>  
+                        <li class="scroll"><a href="#Introduction">Introduction</a></li>
+                        <li class="scroll"><a href="#RQ">Research Questions</a></li> 
+                        <li class="scroll"><a href="#data-story">Data Story</a></li>
+						<li class="scroll"><a href="#team">Team</a></li>
+                    
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <section id="hero-banner">
+        <div class="banner-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12"> 
+                        <div style="margin-top: 150px;">
+
+                            <h2>Wikispeedi-Know</h2>
+                            <p>Investigating Shared Knowledge through Hubs and User Behavior in Wikispeedia</p>
+                            <div class="globe-container">
+                                <iframe 
+                                    src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia_logo_puzzle_globe_spins_horizontally_and_vertically%2C_revealing_the_contents_of_all_of_its_puzzle_pieces%2C_without_background.gif" 
+                                    width="600" 
+                                    height="600" 
+                                    frameborder="0" 
+                                    margin
+                                    loading="lazy" 
+                                    allow="autoplay; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section><!--/#main-slider-->
+
+    <section id="Introduction">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown">Introduction</h2>
+            </div>
+    
+            <div class="wow fadeInRight text-center">
+                <p>Wikipedia, the largest reference work ever created, is an online encyclopedia where anyone can 
+                    contribute to collaboratively written articles. Its interconnected structure makes it an ideal platform 
+                    to study navigation and human associations through games like Wikispeedia 
+                    (play <a href="https://dlab.epfl.ch/wikispeedia/play/">here</a>). In this game, players navigate
+                    from one article to another using only hyperlinks, aiming to minimize the number of clicks. This project
+                    explores two central themes: the role of hubs—highly connected articles—and user navigation patterns.
+                    By analyzing the characteristics and usage of hubs, common and abandoned paths, and more,
+                    we provide insights into how Wikipedia’s structure influences player strategies and efficiency.
+                    Our findings aim to learn something about common knowledge, user patterns, and the interplay between 
+                    structure and strategy. 
+		</p> 
+			
+		<!-- 
+		Our project uses Wikispeedia to explore the structure and gaps in our society's "common knowledge" 
+			by analyzing both popular articles and hub articles. We aim to understand which subjects are 
+			most commonly recognized, how players navigate between them, and where knowledge gaps may exist. 
+			By identifying highly visited articles and hubs (articles with many links) - we can analyze popular 
+			knowledge compared to specialized knowledge. Additionally, exploring common links in successful paths 
+			with unfinished paths will further help us understand public knowledge gaps. Finally, we compare hubs and 
+			user navigation patterns to determine whether hubs improve path efficiency or if users bypass them in favor 
+			of more accessible articles. Through these analyses, we hope to reveal insights into shared knowledge, 
+			intuitive navigation patterns, and the cultural biases embedded in these patterns.</p> --> 
+            </div>
+        </div>
+    </section>
+    
+
+  
+    <section id="RQ">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown">Research Questions</h2>
+            </div>
+    
+            <div class="wow fadeInRight">
+                <div class="research-questions">
+                    <strong>Hubs</strong>
+                    <ul>
+                        <li>What are the defining characteristics of a hub?</li>
+                        <li>Which articles serve as the largest hubs on Wikispeedia, and how frequently are they used by players?</li>
+                        <li>What types of information are most often contained within hubs, and how are the hubs related to other articles or subject categories?</li>
+                    </ul>
+    
+                    <strong>User Navigation Patterns</strong>
+                    <ul>
+                        <li>Do users exhibit similar behaviors when navigating Wikipedia’s network?</li>
+                        <li>What paths are most commonly taken by players, and what does this reveal about public knowledge and associations?</li>
+                        <li>Where do players tend to "block" or abandon their paths, and what kinds of topics or articles are associated with these unfinished paths?</li>
+                    </ul>
+    
+                    <strong>Evidence for a common knowledge</strong>
+                    <ul>
+                        <li>To what extent does the reliance on hubs obscure the identification of common knowledge?</li>
+                        <li>Is it possible to identify common knowledge in a navigational context despite the influence of network structure?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!--/#RQ-->
+    
+    
+    
+
+    <section id="data-story">
+        <div class="container">
+            <!-- Header de la section -->
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown">Data Story</h2>
+            </div>
+    
+            <!-- Row 1: Hubs -->
+            <div class="row wow fadeInDown">
+                <div class="col-md-12">
+                    <h3 class="subsection-title">Wikipedia in wikispeedia</h3>
+			Let's begin with a quick introduction to the version of Wikipedia in the Wikispeedia game. The version containts 4604 articles and 
+			if it is possible to navigate from one article to another the target article is maximum 9 clicks away. That means from one article to any 
+			other which it is possible to navigate to 9 is the maximum number of clicks you might have to do to reach the target article. 
+			Each article is categoriesed as belonging to one or more topics. The figure below shows the distributions of categories on Wikipedia. 
+			The category of an article is not neccesarily unique as one article can belong to several topics for example Wood which belongs to both 
+			the Science and Design and Technology. We can see that the most common categories of articles are Science and Geography. </p>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+                                <iframe src="images/hubs_images/categories_histogram.html" width="80%" height="400px" frameborder="0"></iframe>
+                    	</div>
+
+		</div>
+            </div>
+	<div class="row wow fadeInLeft">
+		<div class="col-md-12">
+			<h3 class="subsection-title">Hubs</h3>
+			<p>
+			To start defining hubs, let's have a look at some data.
+			For an article to be a hub it has to shorten the distance between articles in the wikipedia network, therefore
+			it is important that it links to many articles and has many links to it. So, let's have a look at the number 
+			of outgoing and incoming links to articles. We refer to the number of outgoing links as the source count
+			and the number of links to a specific article as the target count.
+			</p>
+
+			<IMG SRC="images/hubs_images/combined_histogramstarget_counts.png"ALIGN=”center” />
+			<p>
+			From the plot we can see that there is an uneaven distribution of the number of links to and from articles. Most articles have very few links 
+			to them and some articles have a lot of links to them. The number of links on Wikipedia pages falls within a smaller range of values. This is means that the 
+			number of outgoing links from each Wikipedia article is more limited, while many articles tend to link to the same more central articles.
+			Hubs not only have to have many links to or from them. For an article to be a hub it is also important to be able to navigate to other articles effectivly, 
+			thus they must be well connected within the network. To explore how interconnected an article is data over the shortest paths in the wikipedia network is used.
+			Remeber the maximum path distance is 9 if you are able to access an article from another. The histogram below illustrates the mean shortest path from articles to any other 
+			articles that can be navigated to. Additionally, it shows the distribution of the mean shortest path leading to each article.
+			</p>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="images/hubs_images/combined_histogramsmean_shortest_path.png" alt="Histogram of shortest path">
+                    	</div>
+			
+			<p>
+			In the first plot we see that the distribution of mean shortest path to another article is much more evenly distributed and dense. 
+			We can see that there are some articles which are outliers and have a very short mean shortest path. However, this does not mean that 
+			they are more connected to other articles in the network since nan mean was used to calculate the mean shortest path. 
+			Therefore articles which are not connected to any other article will have a value close to 0.
+
+			The mean shortest path to a article is less dense and we can see that there are also some outliers. We can see that some articles 
+			have the value 0 for mean shortest path to them meaning these articles are in accessible to players unless they start from this 
+			article. 
+			The table below shows statistics for the variables source count, target count, mean shortest path from articles to articles it is connected to and
+			the mean shortest path leading to each article.
+			</p>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+                                <IMG SRC="images/table_hubs_stats.png"ALIGN=”center” width="500" height="150" />
+                    	</div>
+			
+			<p>
+			From the statistics we can see that there are articles with no links from them this makes them dead ends in the Wikispeedia game. 
+			There are also articles with no links to them,
+			this means unless a player starts in this article they are unaccessible to the player. We can also see clearly that the distribution of number of links
+			on articles is more even, than the number of links to articles. This means that there are articles which are much more accessible to players than others.
+			So how to define a hub? To help us do this we decided on using the PageRank algorithm. This gives a continuous measure from 0 to 1 of how important an article is by looking
+			at the number of links to that article and the quality of the link. The "quality" of the link refers to how many incoming edges that node (article) has. 
+           		Therefore, PageRank is an iterative algorithm to rank nodes in a graph network.  <br><br>
+
+           		However, the traditional PageRank algorithm highly prioritizes incoming edges to a node, with little consideration given to number of outgoing edges. 
+            		For our purposes, we need to consider both target and source count, to understand articles that are truly cornerstones within the Wikispeedia game. 
+            		We therefore adjusted the PageRank algorithm to give equal weighting to nodes with a high number of incoming edges and nodes with a higher number of outoing edges.
+            		The 'PageRank' value you will see in all charts below refers to this metric we created. The histogram
+			below shows the top 10 hubs using this metric. USA is the largest hub on Wikispeedia. <br>
+			</p>
+			
+			<<div style="display: flex; justify-content: center; align-items: center;">
+                <iframe src="images/html/top_page_rank_articles.html" width="80%" height="650px" frameborder="0"></iframe>
+            </div>
+			
+			<p>
+			As a sanity check let's see how well our metric captures the caracteristics of a hub previously described. To do this
+			we look at the correlation between the variables Source Count, Target Count, Mean shortest path to articles from article,
+			mean shortest path leading to each article and the PageRank score.
+			</p>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+                                <IMG SRC="images/hubs_images/corr_figure.png"ALIGN=”center” width="900" height="300" />
+                    	</div>
+
+			<p>
+			From the correlation matrix we see that the PageRank score is correlated with both the target count and the source count.
+			It is negatively correlated with the mean shortest path to the article and to other articles from a given article.
+			This means that the higher the PageRank score the lower is the mean shortest path.
+			All correlations are significant using a p-value < 0.01. 
+			This tells us the pagerank score captures the characteristics of a hub well!
+			Now that we have created a metric for the hubs on wikipedia what categories have the highest pagerank score? The barplot
+			below is plotted according to the number of articles in each category on Wikipedia.
+			</p>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+                                <IMG SRC="images/hubs_images/sum_pagerank_hub_score_barchart.png"ALIGN=”center” width="800" height="400" />
+                    	</div>
+
+			<p>
+			Interestingly, we can see that the category with the highest PageRank score is Geography then Countries followed 
+			by Science. This is interesting as this is different from the number of articles in each of these categories. 
+			To get a better understanding of the PageRank score we now have a look at the score normalized by the number of articles in each category.
+			</p>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+                                <IMG SRC="images/hubs_images/sum_pagerank_hub_score_percent_barchart.png"ALIGN=”center” width="800" height="400" />
+                    	</div>
+			
+			<p>
+			From looking at the average PageRank score by category we can see that countries has the high value, which makes sense as among the top 
+			10 articles with the highest PageRank score countries make up 5 of these indicating that countries have high scores.
+			Zooming back out, lets look at the graph network visualized in space.
+			</p>
+
+			<div style="display: flex; justify-content: center; align-items: center;">
+                                <iframe src="images/hubs_images/network.html" width="80%" height="400px" frameborder="0"></iframe>
+                    	</div>
+
+
+                    <p> 
+                    Here we have visualized all the articles in the graph network in space, with each dot representing an article, 
+                    and the size of the dot being correlated to the value of the PageRank score. From this, we can get an idea of 
+                    just how large the network is, and how there are not many articles with notable PageRank values, meaning they
+                    are not very well connected in the network.
+                    </p>
+
+                </div>
+            </div>
+
+    
+            <!-- Row 2: User Navigation Pattern -->
+            <div class="row wow fadeInUp">
+                <div class="col-md-12">
+                    <h3 class="subsection-title">User Navigation Pattern</h3>
+                    
+                    <p>
+                        In our analysis of the Wikispeedia dataset, we previously identified key "hubs" in the network. 
+			These hubs often correspond to well known places. 
+			    However, the prominence of an article as a hub does not necessarily indicate its alignment with areas of widely shared knowledge. 
+			    Instead, to better understand the common knowledge shared among users, we must delve into the paths players take during their games.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Do Players Exhibit Similar Navigation Behavior?</strong><br>
+                        To identify shared knowledge, it is essential to determine whether players demonstrate consistent behaviors when faced with the same game setup (i.e., starting and target articles). If players tend to follow similar trajectories, this suggests an underlying common knowledge share by the players.<br>
+                        To investigate this, we analyze how different players approach the same game ( same starting point and target) and assess the degree of similarity in the path they take to navigate.
+                    </p>
+            
+                    <p>
+                        One way to do so is to look at the distance between paths taken by players for a given game. 
+			    There are multiple ways to quantify the "distance" between paths : the Jacquard distance, shortest paths distance or a semantic distance. 
+			    Each metric provides a particular perspective on the nature of the similarity. 
+
+                    </p>
+            
+                    <p>
+                        Here, as an example, we present the results for completed paths in the game that start at "Calculus" and end at "Paul McCartney". 
+			    This distance is the cosine distance, ranging from 0 to 2,between the embeddings of two different paths, calculated using a pretrained 
+			    BERT model.  BERT (Bidirectional Encoder Representations from Transformers) is a state-of-the-art language model designed to understand the context and relationships between words in a sentence, making it particularly useful for measuring semantic similarity.It represents how semantically close two paths are. <br>
+                    </p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/heatmap_distance.html" width="90%" height="500px" frameborder="0"></iframe>
+                        <iframe src="images/mean_sim_distrib.html" width="90%" height="500px" frameborder="0"></iframe>
+                    </div>
+
+                    	<p>
+			The heatmap reveals that the paths taken by different players are highly similar, with a mean semantic distance of 0.21 
+			for this specific game. As the histogram demonstrates, this pattern holds true across all completed games in our dataset, 
+			showing a global mean distance of 0.15 between two finished paths for the same game. For comparison, we calculated the mean distance 
+			between two random paths (based on 100 randomly generated paths), which is significantly higher at 0.87. This indicates that players 
+			tend to follow semantically close paths, reflecting similar navigation behaviors.                        
+			As we have established that users tend to follow similar patterns, we can now further explore their navigation habits.
+			</p>
+            
+                    	<p>
+                        <strong>What do the players' paths teach us about common knowledge?</strong><br>
+                        To analyze players' navigation habits, key questions arise: which articles are visited most often? 
+			Which categories are explored? What links are clicked on the most? Since players tend to select articles they are 
+			familiar with or knowledgeable about to reach their target, examining these choices offers valuable insights into shared 
+			knowledge.
+			<br>
+                        To address this, we identify the top 10 most visited articles, the most frequently clicked links, and the frequency of 
+			exploration for each category across all games.
+                    	</p>
+
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/top_10_articles.html" width="100%%" height="600px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        The top 10 most visited articles align closely with the network’s major hubs, representing globally recognized topics. 
+			This suggests that players have a good knowledge of these concepts and their connections. Notably, only four categories are 
+			represented in the top 10, indicating areas where players feel most confident and knowledgeable.
+                    </p>
+
+                    
+                    
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/html/top_10_links_visites.html" width="80%" height="600px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        The top 10 most clicked links highlight common associations widely understood by players. As with the most visited articles, these associations are predominantly related to geography and science.
+                        This reveals taxonomies that are commonly understood and recognized, such as biodiversity taxonomy (e.g., mammals being animals) and geographic taxonomy (e.g., the UK being part of Europe). These patterns reflect a shared understanding of fundamental classifications that guide players' navigation choices.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="images/wordcloud_categories.png" width="80%" height="500px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        The word cloud above visualizes the frequency of exploration for each category across all games, with the size of each category proportional to the number of visits it received, normalized by the number of articles within that category. Consistent with earlier observations, the most frequently explored categories are Science, Geography, Countries, and History, highlighting players' stronger knowledge in these domains.Additionally, Everyday Life appears to be another category that players tend to visit more often. In contrast, less visited categories like Mathematics or Art may point to areas where players might have comparatively less familiarity. This wordcloud aligns with the distribution of categories across articles of Wikispeedia, shown earlier, which seems logic.  </p>
+
+                    <p>
+                        To better understand whether players have knowledge of a particular category, it is useful to examine the success rate of games starting from a given category and reaching a target category. This can reveal how confident players are when navigating between different topics.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/success_rate_heatmap.html" width="80%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        The heatmap above illustrates players' confidence in navigating between different categories. Missing success rates occur due to insufficient data, with too few games played between certain category pairs (less than 5). The heatmap confirms that players have strong knowledge of countries and geography, as indicated by higher success rates for games targeting articles related to these topics. Surprisingly, we also observe high success rates for certain category pairs, such as IT to Music or Mathematics to People. Additionally, games targeting Religion articles tend to show higher success rates, suggesting new common associations within players' knowledge.<br>
+                        These analyses offer valuable insights into players' shared knowledge, but it is also interesting to ask ourselves what players commonly do not know.
+
+                    </p>
+
+
+                    <p>
+                        <strong>What can we learn from unfinished paths?</strong><br>
+                        Analyzing successful paths offers valuable insights into shared knowledge, but studying unfinished paths can also uncover crucial information about knowledge gaps. By understanding where players stop and how close they are to the target, we can identify areas where their knowledge is lacking. For instance, players who stop near the target but without a strong semantic connection may not recognize the link between the two points, highlighting a gap in their knowledge.
+                    </p>
+                    <p>
+                        In the following plots, we illustrate how close users were to the target, both in terms of semantic distance and the number of clicks away.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/dist_to_target.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+            
+                    <p>
+                        As the plots demonstrate, some unfinished games stop very close to the target—either just one click away or semantically close—indicating that players may have thought they had reached the target. However, other games, still fairly close to the end (two or three clicks away), but not semantically close, suggest a potential knowledge gap. In these cases, players may fail to identify the connection between their stopping point and the target.<br>
+                        One example from the data involves the target "Milk," where the player stops at "Louis Pasteur," just two clicks away (Louis Pasteur → pasteurization → milk). This suggests that the player may not be aware of the connection between pasteurization and milk.                    </p>
+            
+                    <p>
+                        We can further analyze these unfinished games where players are two clicks away from the target by examining the categories of their stopping points and the target categories. To identify patterns in knowledge gaps, we define a "commonly unknown connection" as one where at least 10 players stopped at the same point while attempting to reach the same target. The following plot highlights these commonly unknown connections and the categories they involve.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/sankey.html" width="100%" height="500px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        The Sankey diagram above visualizes these unknown connections. Interestingly, it includes some categories previously identified as "well-known," such as Science and Geography. This suggests that while players generally possess more knowledge in these areas, they still lack understanding of certain specific topics within these categories. As expected, the diagram also features categories previously labeled as less familiar, such as Everyday Life and Design and Technology.
+                    </p>
+
+                    <p>
+                        In conclusion, the paths taken by players provide valuable insights into common knowledge: they reveal the categories where players have the most familiarity, the links and associations they commonly understand, as well as the connections they often fail to recognize. These findings help us better understand the collective knowledge landscape of the players.  <br>
+
+                        However, it is essential to interpret these results with caution, as they are heavily influenced by the types of games played. The starting and target categories significantly impact the patterns observed, and an unequal distribution of game types could skew the conclusions. Future analyses should aim to account for this bias to ensure a more comprehensive understanding of shared and missing knowledge.
+                    </p>
+
+
+                </div>
+            </div>
+            
+    
+            <!-- Row 3: Hubs & User Navigation Pattern -->
+            <div class="row wow fadeInRight">
+                <div class="col-md-12">
+                    <h3 class="subsection-title">Hubs & User Navigation Pattern</h3>
+
+                    <p>
+                        The analyses presented in the previous sections have provided valuable insights into user navigation patterns and the structure of the Wikispeedia network. In the first section, we identified hubs—central nodes that play a crucial role in the network’s topology—while the second section examined user navigation patterns. The findings from these parts suggest the presence of potential common knowledge or knowledge gaps, though their interpretation requires careful consideration. Specifically, while some of these results may reflect existing common knowledge, several factors—particularly the network structure and the prevalence of hubs—could also contribute to the observed patterns. In other words, the concentration of paths around hubs may limit users’ ability to explore diverse pathways, potentially leading to biased or hub-centered conclusions. In this third section, we aim to further investigate the following question: is it possible, despite these hub-centered dynamics, to identify genuine "knowledge" or knowledge gaps, or are the observed results primarily driven by the network structure and user behavior that favors hub-centered navigation?
+                    </p>
+
+                    <p>
+                        To try and answer this question, we first need to understand how bif of a role do hub play in the users games. To do so we can look at the percentage of time people visit hubs in their games along paths, and conmpare this to the percentage of time shortest paths go through hubs along the way. 
+                        This can be visualized in the following plot, note that in this approach we use a binary definition for hubs, where an article is considered a hub if it is in the top 10% of the hub score.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/hub_usage_plot.png" alt="Views_quadrant" style="height: 500px;">
+                    </div>
+
+                    <p>
+                        This plot reveals that in 50% of puzzles, the optimal strategy is to navigate to one of the top 10% most connected hubs with the first click. Most players tend to use these top hubs in their initial steps. Notably, successful players are more likely to utilize hubs within their first three steps compared to unsuccessful players, suggesting that early use of hubs improves navigation success. However, this observation introduces a potential bias to our previous results. While it may demonstrate that players are familiar with the topics associated with these top 10% hubs (e.g., well-known topics like "USA"), the reliance on hubs could obscure the true knowledge gaps. Articles that are highly visited may not necessarily be accessed because they are the most informative, but rather because they are hubs that are highly accessible and central to the network. 
+
+
+                    </p>
+
+
+                    <p>
+                        
+                        To try and overcome this bias we visualize articles pagerank score against the total number of clicks it has recieved by the players. The goal is to see trends in what articles
+                        tends towards the different extremes i.e which articles with a high hub score are not used by players well and what non hubs are 
+			often used by players. Since how often players use articles also depends on how often a link is availible
+			to players, the y-axis has been normalised by the percentage of articles that has a link to
+                        the article in question. In addition, to make it easier to detect outliers, a line is plotted at the 
+                        mean of both axises. 
+                    </p>
+
+                    <p>The lines divide our plot into 4 quadrants, all of them showing different 
+                        extremes and therefore also different information. While most categories 
+                        scatter widely across all quadrants, two areas stand out: the upper left 
+                        corner and the lower right corner of the plots. <br>
+
+                    In the upper left quadrant, we find articles that are not as connected 
+                    to the network as others, yet are still clicked on frequently by players. 
+                    One hypothesis as to why this occurs is that these may be topics people 
+                    instinctively know. The players may recognize something about the topic 
+                    that connects it to the target in some way, even though, on average, it 
+                    may be better to choose another path toward a hub. <br>
+                        
+                    In contrast, the lower right quadrant tells a different story. Here lie articles 
+                    that are highly connected yet rarely selected. It could be that these topics are 
+                    more specific and slip past everyday curiosity, hinting at lesser-known concepts.
+                    </p>
+
+                    <p>
+                        Lastly, the plots are interactive, so feel free to explore these plots by yourself by removing and singling out categories.
+                        Since in this game some players know what kind of articles usually corresponds to a 
+                        better path to the target, it is important for the analysis to not focus on specific articles, but instead 
+                        on categories of articles that stands out. 
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                    Geography is a scattered category that dominates with some of the largest hubs and frequently 
+                    used articles. However, many highly connected articles remain relatively untouched by users, 
+                    particularly those focused on countries, which tend heavily toward the lower right quadrant. <br>
+
+                    The Science category tells a similar story, with some of the biggest outliers in both the upper 
+                    left and lower right quadrants. <br>
+
+                    Lastly, there is Everyday Life and IT. Articles in this category are generally less connected 
+                    than others but are still frequently picked by players. IT stands out in particular, with 
+                    no articles appearing in the lower right quadrant. <br>
+
+                    Moving on, some of these findings will be investigated further by looking at the categories 
+                    separately and the trends of the second categories related to these articles.   
+                    </p>
+
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency_Geography.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        <b>Observations:</b> <br></br>
+                        - The categories that have trends towards the upper left quadrant with bigger portion of outliers than other articles are North American Geography, General Geograhpy and Geology and Geophysics. <br></br>
+                        - As stated before and can be seen in the first plot, countries constitute the absolute majority of all articles in the lower right quadrant, it can be seen that the countries that one would 
+			  usually classify as more "known" have a higher frequency by the players. <br></br>
+
+			The fact that North American Geography tends to the upper left quadrant supports (but does not prove) the claim about the quadrants to some extent, since it can be assumed that people in general 
+			have a somewhat good understanding of America and United States compared to other parts of the world, for example countries like Latvia, Laos and Lebanon that can be found in 
+			the bottom right quadrant. 
+
+                        It should however be mentioned that 2 of the biggest outliers in the upper left quadrant have "United States" in the article name, the reason for this is probably that 
+			the players only selects this article in order to get to the article "United States", hence these articles should not be taken into account when drawing conclusions.
+
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency_Everyday_life.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        <br></br>
+                        The categories that tend toward the upper left quadrant, with a larger 
+                        portion of outliers than other articles, are North American Geography, General 
+                        Geography, and Geology and Geophysics. As noted earlier and seen in the first plot, 
+                        countries make up the majority of articles in the lower right quadrant. Countries 
+                        that are generally considered more "known" tend to have a higher frequency of clicks 
+                        by players.
+
+                        The fact that North American Geography articles appear more frequently in the upper 
+                        left quadrant supports, though does not prove, the idea that these articles represent 
+                        common knowledge. This may be because people are generally more familiar with the 
+                        United States compared to other regions. For example, countries like Latvia, Laos, 
+                        and Lebanon are found in the lower right quadrant. However, two of the biggest 
+                        outliers in the upper left quadrant include "United States" in their titles, likely 
+                        because players select these articles to quickly reach "United States". Therefore, 
+                        these articles should not be considered when drawing conclusions.
+
+                        <br></br>
+
+                        Articles with a lower PageRank score but above-average user frequency mostly belong to 
+                        the "Film" and "Computer and Video Games" categories. These articles often represent 
+                        significant pop-cultural phenomena such as Star Wars, Nintendo, and Mario. Sports 
+                        articles make up the largest portion of the lower right quadrant within the "Everyday 
+                        Life" category.
+
+                        The prominence of cultural phenomena in the upper left quadrant supports the idea 
+                        that these categories are more likely to represent common knowledge than those in 
+                        the lower right quadrant. This conclusion can be made because these topics are widely 
+                        recognized around the world.
+
+                        Once again, an outlier in the upper left quadrant contains "United States" in the 
+                        title, reducing its relevance for analysis. Players likely select this article to reach 
+                        "United States," so it does not support claims about common knowledge.
+
+                        The significant presence of sports articles in the lower right quadrant is somewhat 
+                        surprising. While articles in the upper left quadrant, such as those about cultural 
+                        phenomena, can be assumed to represent common knowledge, sports like volleyball, 
+                        badminton, and ice hockey are less intuitive choices. However, some sports articles, 
+                        like football, seem out of place in this quadrant. Since there are few major outliers 
+                        in the lower right quadrant, no definitive conclusions can be drawn from this trend.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency_Science.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        Chemistry has almost no articles in the upper left quadrant but many in the lower right 
+                        quadrant. Physics articles are widely scattered, with those in the upper left quadrant 
+                        being primarily space-related, while those in the lower right quadrant cover more 
+                        fundamental physics topics. Biology articles are also scattered, with animals mainly 
+                        appearing in the upper left quadrant, while more specialized and lower-level biology 
+                        articles tend to fall in the lower right quadrant.
+
+                        Once again, the plots reveal trends that align with expectations. Everyday topics such 
+                        as animals or well-known space missions like the Moon Landing gravitate toward the upper 
+                        left quadrant. In contrast, more academic and specialized articles tend to occupy the 
+                        lower right quadrant. This supports the claim that the quadrants reflect a relationship 
+                        with common knowledge.
+
+                    </p>
+
+                    <p>
+                        To validate or refute the findings on common knowledge, we have decided to gather external data by collecting the average monthly view counts of Wikipedia pages. The number of views reflects the popularity and visibility of specific topics, helping to identify which articles are frequently accessed not just because of their centrality in the network, but potentially due to their familiarity to users. By comparing these view counts with our previous results, we aim to determine if the observed results are evidence of common knowledge or if they are still influenced by other factors and can not lead to any conclusion yet. The following plot shows the mean monthly views accross the two quadrants of interest.
+                    </p>
+
+		<div style="display: flex; justify-content: center; align-items: center;">
+    		<iframe src="images/html/views_per_quadrant.png" alt="Views_quadrant" style="width: 600px; height: 400px;">
+		</div>
+
+                    <p>
+                        Spearman correlation between the number of views and user frequency: 0.071 <br>
+                        Spearman correlation between the number of views and PageRank score: 0.565 <br>
+                        
+                        First we see from the spearman correlation factor that the number of views (hence common knowledge) doesn't seem to be correlated with the frequency of use by players. This supports what we said earlier as the frequency of use by players is influenced by many factors and can not be directly linked to common knowledge.
+
+                            The results of the plot are on first glance a bit counter intuitive, since the a normal assumption would be that articles that constitutes common knowledge more would have a higher rate of visits. Accross all categories only People and Music have a higher rate of visits in the upper left quadrant compared to the lower right quadrant. Some other categories like Geography or Countries have inverse results, which is surprising. 
+                            We can explain this by the fact that user frequency is really dependant of the type of games played by users, and in our dataset the games are not uniformly distributed, for example one game (Asteroid to Viking) makes up 20% of the games, so articles directly linked to these games will have a higher frequency of use. With a more uniform distribution of games we might see a different result.
+
+                            So we can conclude that on this data we can not base our conclusion for common knowledge only on the frequency of use by players and the hub score of the articles.
+                                                    
+                    <br></br>
+                    
+                        
+                    <p>
+                        A more accurate approach to determine common knowledge could be to examine how often players choose to bypass a more central article in favor of a less optimal one, by comparing their hubness score. We investigate cases where alternative choices have the same or shorter shortest-path distance to the target, in order to reveal which articles are frequently overlooked by players.
+                    </p>
+                    
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/DistributionBadChoices.png" alt="Views_quadrant" style="height: 500px;">
+                    </div>
+                    <p>
+                        As expected, users frequently deviate 
+                        from the most central navigation path. A remarkable 41.9% of choices are optimal in this context.
+                        Notably, some articles are overlooked more frequently 
+                        than others, which poses the question if they are less known by the players. The following
+                        scatter plot seeks to answer this.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/hubpng" style="max-width: 100%; max-height: 100%; width: auto; height: 650px; border: none;" alt="Image Description">
+                    </div>
+
+                    <p>
+                        This plot shows that the more central (higher PageRank) an article is, the more likely 
+                        it is to be skipped (with a higher share of being overlooked), even when these articles could lead to 
+                        the target just as quickly or faster while being more central to the wikispeedia network 
+                        (according to their distance to the target article and their page rank score). 
+                        This trend may be due to articles rarely linking to only one hub-like article, 
+                        but instead linking to multiple and forcing a choice where the player is unaware of the 
+                        exact page rank scores.
+
+                        However, certain patterns emerge when comparing articles with a similar page rank score. 
+                        The category countries appears to be generally overlooked less than geography and both less than
+                        science. However this metric still does not help in identifying common knowledge, as can be shown
+                        with the examplary article 'Wasp' at a page rank score of 0.000092 is overlooked 24.3% of the 
+                        time whereas 'George Byron, 6th Baron Byron' at a similar page rank score is merely overlooked 3.9% of the time.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/views_forgone.png" style="max-width: 100%; max-height: 100%; width: auto; height: 650px; border: none;" alt="Image Description">
+                    </div>      
+
+                                       
+                    
+                    For almost all categories we see that the top 10 overlooked articles have very low monthly views, which could indicate that these articles are not common knowledge. The only exception are countries and IT. This could be explained by the fact that the 2 categories are subjects of global relevance, appealing to a broad audience, regardless of age, nationality, or background. Countries are hubs, they connect to almost everything and are a main figure in news, current affairs and have a strong connection to culture. IT is, in this day and age, connected to everyone. It also circulates the news a lot through the rapdily evolving industry, also with a lot of interest in emerging trends such as AI and quantom computing.
+                    </p>
+
+            </div>
+        </div>
+    </section>
+
+	<section id="Conclusion">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown">Conclusion</h2>
+            </div>
+    
+            <div class="wow fadeInRight text-center">
+                <p>The analysis of hubs and user navigation patterns provides indications of shared knowledge and common navigation behaviors of players. Where hubs play a central role in influencing players paths to target articles. However, establishing connections between these patterns and underlying "knowledge" remains a complicated challenge. A couple of methods to extract conclusions are presented, all of which shows trends in the data that, on an intuitive level, supports the methods to some extent. Nevertheless, despite these trends, the trends are also accompanied by counter-evidence, especially related to the category "Countries", a category with high concentration of hubs.
+
+                    Therefore, while the observed trends suggest potential indicators of common knowledge and knowledge gaps, the complexity of the data, formed by factors such as in-game strategies and skewed distribution of game types, limits the ability to draw out any further and stronger conclusions. Now that you are aware of all the intricacies of the Wikispeedia game and the insights we can gain from it, how might your game navigation change the next time you play?
+
+
+
+
+
+		</p> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="team">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown">Our Team</h2>
+                <p class="wow fadeInDown">
+                    Credits for this work go to the Adaventure team : 
+                </p>
+                <div class="team-members">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-member wow fadeInUp">
+                                <img src="images/img_person.svg" alt="Madeleine Hueber" class="img-fluid" style="width: 100px; height: 100px;">
+                                <h5>Madeleine Hueber</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member wow fadeInUp">
+                                <img src="images/img_person.svg" alt="Michelle Erin Odnert" class="img-fluid" style="width: 100px; height: 100px;">
+                                <h5>Michelle Erin Odnert</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member wow fadeInUp">
+                                <img src="images/img_person.svg" alt="Lisa Anna Charlotta Vind" class="img-fluid" style="width: 100px; height: 100px;">
+                                <h5>Lisa Anna Charlotta Vind</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member wow fadeInUp">
+                                <img src="images/img_person.svg" alt="Viktor Axel Stefan Svalstedt" class="img-fluid" style="width: 100px; height: 100px;">
+                                <h5>Viktor Axel Stefan Svalstedt</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member wow fadeInUp">
+                                <img src="images/img_person.svg" alt="Antoine Dávid" class="img-fluid" style="width: 100px; height: 100px;">
+                                <h5>Antoine Dávid</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>&copy; 2024 Adaventure. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
+</body>
+</html>
