@@ -424,6 +424,241 @@
 
                 </div>
             </div>
+            
+    
+            <!-- Row 3: Hubs & User Navigation Pattern -->
+            <div class="row wow fadeInRight">
+                <div class="col-md-12">
+                    <h3 class="subsection-title">Hubs & User Navigation Pattern</h3>
+
+                    <p>
+                        The analyses presented in the previous sections have provided valuable insights into user navigation patterns and the structure of the Wikispeedia network. In the first section, we identified hubs—central nodes that play a crucial role in the network’s topology—while the second section examined user navigation patterns. The findings from these parts suggest the presence of potential common knowledge or knowledge gaps, though their interpretation requires careful consideration. Specifically, while some of these results may reflect existing common knowledge, several factors—particularly the network structure and the prevalence of hubs—could also contribute to the observed patterns. In other words, the concentration of paths around hubs may limit users’ ability to explore diverse pathways, potentially leading to biased or hub-centered conclusions. In this third section, we aim to further investigate the following question: is it possible, despite these hub-centered dynamics, to identify genuine "knowledge" or knowledge gaps, or are the observed results primarily driven by the network structure and user behavior that favors hub-centered navigation?
+                    </p>
+
+                    <p>
+                        To try and answer this question, we first need to understand how bif of a role do hub play in the users games. To do so we can look at the percentage of time people visit hubs in their games along paths, and conmpare this to the percentage of time shortest paths go through hubs along the way. 
+                        This can be visualized in the following plot, note that in this approach we use a binary definition for hubs, where an article is considered a hub if it is in the top 10% of the hub score.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/hub_usage_plot.png" alt="Views_quadrant" style="height: 500px;">
+                    </div>
+
+                    <p>
+                        This plot reveals that in 50% of puzzles, the optimal strategy is to navigate to one of the top 10% most connected hubs with the first click. Most players tend to use these top hubs in their initial steps. Notably, successful players are more likely to utilize hubs within their first three steps compared to unsuccessful players, suggesting that early use of hubs improves navigation success. However, this observation introduces a potential bias to our previous results. While it may demonstrate that players are familiar with the topics associated with these top 10% hubs (e.g., well-known topics like "USA"), the reliance on hubs could obscure the true knowledge gaps. Articles that are highly visited may not necessarily be accessed because they are the most informative, but rather because they are hubs that are highly accessible and central to the network. 
+
+
+                    </p>
+
+
+                    <p>
+                        
+                        To try and overcome this bias we visualize articles pagerank score against the total number of clicks it has recieved by the players. The goal is to see trends in what articles
+                        tends towards the different extremes i.e which articles with a high hub score are not used by players well and what non hubs are 
+			often used by players. Since how often players use articles also depends on how often a link is availible
+			to players, the y-axis has been normalised by the percentage of articles that has a link to
+                        the article in question. In addition, to make it easier to detect outliers, a line is plotted at the 
+                        mean of both axises. 
+                    </p>
+
+                    <p>The lines divide our plot into 4 quadrants, all of them showing different 
+                        extremes and therefore also different information. While most categories 
+                        scatter widely across all quadrants, two areas stand out: the upper left 
+                        corner and the lower right corner of the plots. <br>
+
+                    In the upper left quadrant, we find articles that are not as connected 
+                    to the network as others, yet are still clicked on frequently by players. 
+                    One hypothesis as to why this occurs is that these may be topics people 
+                    instinctively know. The players may recognize something about the topic 
+                    that connects it to the target in some way, even though, on average, it 
+                    may be better to choose another path toward a hub. <br>
+                        
+                    In contrast, the lower right quadrant tells a different story. Here lie articles 
+                    that are highly connected yet rarely selected. It could be that these topics are 
+                    more specific and slip past everyday curiosity, hinting at lesser-known concepts.
+                    </p>
+
+                    <p>
+                        Lastly, the plots are interactive, so feel free to explore these plots by yourself by removing and singling out categories.
+                        Since in this game some players know what kind of articles usually corresponds to a 
+                        better path to the target, it is important for the analysis to not focus on specific articles, but instead 
+                        on categories of articles that stands out. 
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                    Geography is a scattered category that dominates with some of the largest hubs and frequently 
+                    used articles. However, many highly connected articles remain relatively untouched by users, 
+                    particularly those focused on countries, which tend heavily toward the lower right quadrant. <br>
+
+                    The Science category tells a similar story, with some of the biggest outliers in both the upper 
+                    left and lower right quadrants. <br>
+
+                    Lastly, there is Everyday Life and IT. Articles in this category are generally less connected 
+                    than others but are still frequently picked by players. IT stands out in particular, with 
+                    no articles appearing in the lower right quadrant. <br>
+
+                    Moving on, some of these findings will be investigated further by looking at the categories 
+                    separately and the trends of the second categories related to these articles.   
+                    </p>
+
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency_Geography.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        <b>Observations:</b> <br></br>
+                        - The categories that have trends towards the upper left quadrant with bigger portion of outliers than other articles are North American Geography, General Geograhpy and Geology and Geophysics. <br></br>
+                        - As stated before and can be seen in the first plot, countries constitute the absolute majority of all articles in the lower right quadrant, it can be seen that the countries that one would 
+			  usually classify as more "known" have a higher frequency by the players. <br></br>
+
+			The fact that North American Geography tends to the upper left quadrant supports (but does not prove) the claim about the quadrants to some extent, since it can be assumed that people in general 
+			have a somewhat good understanding of America and United States compared to other parts of the world, for example countries like Latvia, Laos and Lebanon that can be found in 
+			the bottom right quadrant. 
+
+                        It should however be mentioned that 2 of the biggest outliers in the upper left quadrant have "United States" in the article name, the reason for this is probably that 
+			the players only selects this article in order to get to the article "United States", hence these articles should not be taken into account when drawing conclusions.
+
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency_Everyday_life.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        <br></br>
+                        The categories that tend toward the upper left quadrant, with a larger 
+                        portion of outliers than other articles, are North American Geography, General 
+                        Geography, and Geology and Geophysics. As noted earlier and seen in the first plot, 
+                        countries make up the majority of articles in the lower right quadrant. Countries 
+                        that are generally considered more "known" tend to have a higher frequency of clicks 
+                        by players.
+
+                        The fact that North American Geography articles appear more frequently in the upper 
+                        left quadrant supports, though does not prove, the idea that these articles represent 
+                        common knowledge. This may be because people are generally more familiar with the 
+                        United States compared to other regions. For example, countries like Latvia, Laos, 
+                        and Lebanon are found in the lower right quadrant. However, two of the biggest 
+                        outliers in the upper left quadrant include "United States" in their titles, likely 
+                        because players select these articles to quickly reach "United States". Therefore, 
+                        these articles should not be considered when drawing conclusions.
+
+                        <br></br>
+
+                        Articles with a lower PageRank score but above-average user frequency mostly belong to 
+                        the "Film" and "Computer and Video Games" categories. These articles often represent 
+                        significant pop-cultural phenomena such as Star Wars, Nintendo, and Mario. Sports 
+                        articles make up the largest portion of the lower right quadrant within the "Everyday 
+                        Life" category.
+
+                        The prominence of cultural phenomena in the upper left quadrant supports the idea 
+                        that these categories are more likely to represent common knowledge than those in 
+                        the lower right quadrant. This conclusion can be made because these topics are widely 
+                        recognized around the world.
+
+                        Once again, an outlier in the upper left quadrant contains "United States" in the 
+                        title, reducing its relevance for analysis. Players likely select this article to reach 
+                        "United States," so it does not support claims about common knowledge.
+
+                        The significant presence of sports articles in the lower right quadrant is somewhat 
+                        surprising. While articles in the upper left quadrant, such as those about cultural 
+                        phenomena, can be assumed to represent common knowledge, sports like volleyball, 
+                        badminton, and ice hockey are less intuitive choices. However, some sports articles, 
+                        like football, seem out of place in this quadrant. Since there are few major outliers 
+                        in the lower right quadrant, no definitive conclusions can be drawn from this trend.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/pagerank_vs_frequency_Science.html" width="100%" height="650px" frameborder="0"></iframe>
+                    </div>
+
+                    <p>
+                        Chemistry has almost no articles in the upper left quadrant but many in the lower right 
+                        quadrant. Physics articles are widely scattered, with those in the upper left quadrant 
+                        being primarily space-related, while those in the lower right quadrant cover more 
+                        fundamental physics topics. Biology articles are also scattered, with animals mainly 
+                        appearing in the upper left quadrant, while more specialized and lower-level biology 
+                        articles tend to fall in the lower right quadrant.
+
+                        Once again, the plots reveal trends that align with expectations. Everyday topics such 
+                        as animals or well-known space missions like the Moon Landing gravitate toward the upper 
+                        left quadrant. In contrast, more academic and specialized articles tend to occupy the 
+                        lower right quadrant. This supports the claim that the quadrants reflect a relationship 
+                        with common knowledge.
+
+                    </p>
+
+                    <p>
+                        To validate or refute the findings on common knowledge, we have decided to gather external data by collecting the average monthly view counts of Wikipedia pages. The number of views reflects the popularity and visibility of specific topics, helping to identify which articles are frequently accessed not just because of their centrality in the network, but potentially due to their familiarity to users. By comparing these view counts with our previous results, we aim to determine if the observed results are evidence of common knowledge or if they are still influenced by other factors and can not lead to any conclusion yet. The following plot shows the mean monthly views accross the two quadrants of interest.
+                    </p>
+
+		<div style="display: flex; justify-content: center; align-items: center;">
+    		<iframe src="images/html/views_per_quadrant.png" alt="Views_quadrant" style="width: 600px; height: 400px;">
+		</div>
+
+                    <p>
+                        Spearman correlation between the number of views and user frequency: 0.071 <br>
+                        Spearman correlation between the number of views and PageRank score: 0.565 <br>
+                        
+                        First we see from the spearman correlation factor that the number of views (hence common knowledge) doesn't seem to be correlated with the frequency of use by players. This supports what we said earlier as the frequency of use by players is influenced by many factors and can not be directly linked to common knowledge.
+
+                            The results of the plot are on first glance a bit counter intuitive, since the a normal assumption would be that articles that constitutes common knowledge more would have a higher rate of visits. Accross all categories only People and Music have a higher rate of visits in the upper left quadrant compared to the lower right quadrant. Some other categories like Geography or Countries have inverse results, which is surprising. 
+                            We can explain this by the fact that user frequency is really dependant of the type of games played by users, and in our dataset the games are not uniformly distributed, for example one game (Asteroid to Viking) makes up 20% of the games, so articles directly linked to these games will have a higher frequency of use. With a more uniform distribution of games we might see a different result.
+
+                            So we can conclude that on this data we can not base our conclusion for common knowledge only on the frequency of use by players and the hub score of the articles.
+                                                    
+                    <br></br>
+                    
+                        
+                    <p>
+                        A more accurate approach to determine common knowledge could be to examine how often players choose to bypass a more central article in favor of a less optimal one, by comparing their hubness score. We investigate cases where alternative choices have the same or shorter shortest-path distance to the target, in order to reveal which articles are frequently overlooked by players.
+                    </p>
+                    
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/DistributionBadChoices.png" alt="Views_quadrant" style="height: 500px;">
+                    </div>
+                    <p>
+                        As expected, users frequently deviate 
+                        from the most central navigation path. A remarkable 41.9% of choices are optimal in this context.
+                        Notably, some articles are overlooked more frequently 
+                        than others, which poses the question if they are less known by the players. The following
+                        scatter plot seeks to answer this.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/hubpng" style="max-width: 100%; max-height: 100%; width: auto; height: 650px; border: none;" alt="Image Description">
+                    </div>
+
+                    <p>
+                        This plot shows that the more central (higher PageRank) an article is, the more likely 
+                        it is to be skipped (with a higher share of being overlooked), even when these articles could lead to 
+                        the target just as quickly or faster while being more central to the wikispeedia network 
+                        (according to their distance to the target article and their page rank score). 
+                        This trend may be due to articles rarely linking to only one hub-like article, 
+                        but instead linking to multiple and forcing a choice where the player is unaware of the 
+                        exact page rank scores.
+
+                        However, certain patterns emerge when comparing articles with a similar page rank score. 
+                        The category countries appears to be generally overlooked less than geography and both less than
+                        science. However this metric still does not help in identifying common knowledge, as can be shown
+                        with the examplary article 'Wasp' at a page rank score of 0.000092 is overlooked 24.3% of the 
+                        time whereas 'George Byron, 6th Baron Byron' at a similar page rank score is merely overlooked 3.9% of the time.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/views_forgone.png" style="max-width: 100%; max-height: 100%; width: auto; height: 650px; border: none;" alt="Image Description">
+                    </div>      
+
+                                       
+                    
+                    For almost all categories we see that the top 10 overlooked articles have very low monthly views, which could indicate that these articles are not common knowledge. The only exception are countries and IT. This could be explained by the fact that the 2 categories are subjects of global relevance, appealing to a broad audience, regardless of age, nationality, or background. Countries are hubs, they connect to almost everything and are a main figure in news, current affairs and have a strong connection to culture. IT is, in this day and age, connected to everyone. It also circulates the news a lot through the rapdily evolving industry, also with a lot of interest in emerging trends such as AI and quantom computing.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
