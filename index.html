@@ -596,10 +596,65 @@
                         To validate or refute the findings on common knowledge, we have decided to gather external data by collecting the average monthly view counts of Wikipedia pages. The number of views reflects the popularity and visibility of specific topics, helping to identify which articles are frequently accessed not just because of their centrality in the network, but potentially due to their familiarity to users. By comparing these view counts with our previous results, we aim to determine if the observed results are evidence of common knowledge or if they are still influenced by other factors and can not lead to any conclusion yet. The following plot shows the mean monthly views accross the two quadrants of interest.
                     </p>
 
-		            
+		            <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="images/html/views_per_quadrant.png" alt="Views_quadrant" style="width: 600px; height: 400px;">
+                    </div>
+
+                    <p>
+                        Spearman correlation between the number of views and user frequency: 0.071 <br>
+                        Spearman correlation between the number of views and PageRank score: 0.565 <br>
+                        
+                        First we see from the spearman correlation factor that the number of views (hence common knowledge) doesn't seem to be correlated with the frequency of use by players. This supports what we said earlier as the frequency of use by players is influenced by many factors and can not be directly linked to common knowledge.
+
+                            The results of the plot are on first glance a bit counter intuitive, since the a normal assumption would be that articles that constitutes common knowledge more would have a higher rate of visits. Accross all categories only People and Music have a higher rate of visits in the upper left quadrant compared to the lower right quadrant. Some other categories like Geography or Countries have inverse results, which is surprising. 
+                            We can explain this by the fact that user frequency is really dependant of the type of games played by users, and in our dataset the games are not uniformly distributed, for example one game (Asteroid to Viking) makes up 20% of the games, so articles directly linked to these games will have a higher frequency of use. With a more uniform distribution of games we might see a different result.
+
+                            So we can conclude that on this data we can not base our conclusion for common knowledge only on the frequency of use by players and the hub score of the articles.
+                                                    
+                    <br></br>
+                    
+                        
+                    <p>
+                        A more accurate approach to determine common knowledge could be to examine how often players choose to bypass a more central article in favor of a less optimal one, by comparing their hubness score. We investigate cases where alternative choices have the same or shorter shortest-path distance to the target, in order to reveal which articles are frequently overlooked by players.
+                    </p>
+                    
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/DistributionBadChoices.png" alt="Views_quadrant" style="height: 500px;">
+                    </div>
+                    <p>
+                        As expected, users frequently deviate 
+                        from the most central navigation path. A remarkable 41.9% of choices are optimal in this context.
+                        Notably, some articles are overlooked more frequently 
+                        than others, which poses the question if they are less known by the players. The following
+                        scatter plot seeks to answer this.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/hubpng" style="max-width: 100%; max-height: 100%; width: auto; height: 650px; border: none;" alt="Image Description">
+                    </div>
+
+                    <p>
+                        This plot shows that the more central (higher PageRank) an article is, the more likely 
+                        it is to be skipped (with a higher share of being overlooked), even when these articles could lead to 
+                        the target just as quickly or faster while being more central to the wikispeedia network 
+                        (according to their distance to the target article and their page rank score). 
+                        This trend may be due to articles rarely linking to only one hub-like article, 
+                        but instead linking to multiple and forcing a choice where the player is unaware of the 
+                        exact page rank scores.
+
+                        However, certain patterns emerge when comparing articles with a similar page rank score. 
+                        The category countries appears to be generally overlooked less than geography and both less than
+                        science. However this metric still does not help in identifying common knowledge, as can be shown
+                        with the examplary article 'Wasp' at a page rank score of 0.000092 is overlooked 24.3% of the 
+                        time whereas 'George Byron, 6th Baron Byron' at a similar page rank score is merely overlooked 3.9% of the time.
+                    </p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/views_forgone.png" style="max-width: 100%; max-height: 100%; width: auto; height: 650px; border: none;" alt="Image Description">
+                    </div>      
 
                                        
-                    
+                    <p>
                     For almost all categories we see that the top 10 overlooked articles have very low monthly views, which could indicate that these articles are not common knowledge. The only exception are countries and IT. This could be explained by the fact that the 2 categories are subjects of global relevance, appealing to a broad audience, regardless of age, nationality, or background. Countries are hubs, they connect to almost everything and are a main figure in news, current affairs and have a strong connection to culture. IT is, in this day and age, connected to everyone. It also circulates the news a lot through the rapdily evolving industry, also with a lot of interest in emerging trends such as AI and quantom computing.
                     </p>
                 </div>
